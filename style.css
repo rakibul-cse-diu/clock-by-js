@@ -1,0 +1,76 @@
+/* Fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+/* Univarsal */
+body{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient(circle, #fbd53d, #facb39, #f8c035, #f6b633, #f4ac31);
+    min-height: 100vh;
+}
+
+/* Clock */
+.container{
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    box-shadow: -5px 15px 20px;
+    position: relative;
+}
+
+/* Numbers  */
+.numbers{
+    --rotation: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transform: rotate(var(--rotation));
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.number-1{
+    transform: rotate(30deg);
+}
+.number-2{
+    transform: rotate(60deg);
+}
+.number-3{
+    transform: rotate(90deg);
+}
+.number-4{
+    transform: rotate(120deg);
+}
+.number-5{
+    transform: rotate(150deg);
+}
+.number-6{
+    transform: rotate(180deg);
+}
+.number-7{
+    transform: rotate(210deg);
+}
+.number-8{
+    transform: rotate(240deg);
+}
+.number-9{
+    transform: rotate(270deg);
+}
+.number-10{
+    transform: rotate(300deg);
+}
+.number-11{
+    transform: rotate(330deg);
+}
+
+
+/* Hands  */
+.hands{
+    
+}
