@@ -15,7 +15,7 @@ body{
 }
 
 /* Clock */
-.container{
+.clock{
     height: 350px;
     width: 350px;
     border-radius: 50%;
@@ -72,5 +72,35 @@ body{
 
 /* Hands  */
 .hands{
-    
+    --rotation: 0;
+    position: absolute;
+    width: 10px;
+    height: 40%;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%) rotate(var(--rotation));
+    transform-origin: bottom;
+    background-color: black;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    z-index: 10;
+}
+.sec{
+    height: 47%;
+    width: 3px;
+    background-color: red;
+}
+.min{
+    height: 40%;
+    width: 6px;
+    background-color: black;
+    transform: rotate(90deg);
+
+}
+.hour{
+    height: 30%;
+    width: 10px;
+    background-color: rgb(252, 251, 248);
+    border: 1px solid black;
+    transform: rotate(60deg);
 }
